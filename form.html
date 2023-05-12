@@ -10,16 +10,40 @@
             text-align: center;
             color: blue;
         }
+        ul{
+            display: flex;
+            font-size: 30px;
+        }
+       nav ul:hover{
+            color: rgb(255, 0, 217);
+            
+        } 
+        nav li{
+            list-style: none;
+            margin: 3px;
+            padding: 7px;
+        }
+       nav a:hover{
+            color: rgb(255, 0, 144);
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="form.html">Form</a> </li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="semantic.html">Semantic</a></li>
+        </ul>
+        </nav>
     <form>
         <h1>Registration Form</h1>
         <p>
             Name: <input type="text" placeholder="Enter your name">
         </p><p> Email: <input type="text" placeholder="Enter your email" ></p>
     </form><p> Phone no: <input type="text" placeholder="Enter your phone no"></p>
-    <p> Date of birth: <input type="text" placeholder="enter your date of birth"></p>
+    <p> Date of birth: <input type="date" placeholder="enter your date of birth"></p>
     <p></p>
     <fieldset>
         <legend>Select your pitha </legend>
