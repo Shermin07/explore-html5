@@ -13,9 +13,10 @@
         h1:hover{
             color: rgb(228, 29, 95);
         }
-        ul{
+        nav >ul{
             display: flex;
             font-size: 30px;
+            text-decoration: none;
         }
        nav ul:hover{
             color: rgb(255, 0, 217);
@@ -26,18 +27,49 @@
             margin: 3px;
             padding: 7px;
         }
-       nav a:hover{
+       nav li a:hover{
             color: rgb(255, 0, 144);
-        }
+            }
+            nav li a{
+                text-decoration: none;
+            }
+       .dropdown{
+        display: none;
+        position: absolute;
+        background-color: aqua;
+       }
+       nav>ul>li:hover>ul{
+        display: block;
+       }
+.dropdown2{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+}
+
     </style>
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="form.html">Form</a> </li>
-            <li><a href="table.html">Table</a></li>
+            <li><a href="table.html">Table
+                <ul class="dropdown2">
+                    <li><a href="">link-1</a></li>
+                    <li><a href="">link-2</a></li>
+                    <li><a href="">link-3</a></li>
+                    <li><a href="">link-4</a></li>
+                </ul>
+            </a></li>
             <li><a href="explore.html">Explore</a></li>
-            <li><a href="semantic.html">Semantic</a></li>
+            <li><a href="semantic.html">Semantic
+                <ul class="dropdown">
+                    <li><a href="">link-1</a></li>
+                    <li><a href="">link-2</a></li>
+                    <li><a href="">link-3</a></li>
+                    <li><a href="">link-4</a></li>
+                </ul>
+            </a></li>
         </ul>
         </nav>
     <form>
